@@ -193,8 +193,9 @@ section
 
 .home-sci 
 {
-    position: absolute
-    bottom: 4rem ;
-    width: 170;
-
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
 }
