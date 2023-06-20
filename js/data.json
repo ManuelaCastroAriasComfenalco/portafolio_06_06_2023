@@ -1,9 +1,30 @@
 {
     "nombre": "Manuela",
     "menu":
-    {
-        "nombre": "Home",
-        "link": "#home"
-    }
-    
+    [
+        {
+            "nombre": "Home",
+            "link": "#home"
+        },
+        {
+            "nombre": "About",
+            "link": "#about"
+        },
+        {
+            "nombre": "Education",
+            "link": "#education"
+        },
+        {
+            "nombre": "Skills",
+            "link": "#skills"
+        },
+        {
+            "nombre": "Contact",
+            "link": "#contact"
+        }
+    ]
+}
+
+{
+    "nombre": "Manuela",
 }
