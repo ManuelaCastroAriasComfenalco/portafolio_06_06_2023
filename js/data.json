@@ -1,4 +1,9 @@
 {
-    "nombre": "manuela"
+    "nombre": "Manuela",
+    "menu":
+    {
+        "nombre": "Home",
+        "link": "#home"
+    }
     
 }
