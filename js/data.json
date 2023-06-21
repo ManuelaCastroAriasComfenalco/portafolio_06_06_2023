@@ -1,32 +1,68 @@
-
 {
-    "Home":
+    "home":
     {
         "nombre": "Manuela",
         "menu":
-    [
+        [
+            {
+                "nombre": "Home",
+                "link": "#home"
+            },
+            {
+                "nombre": "About",
+                "link": "#about"
+            },
+            {
+                "nombre": "Education",
+                "link": "#education"
+            },
+            {
+                "nombre": "Skills",
+                "link": "#skills"
+            },
+            {
+                "nombre": "Contact",
+                "link": "#contact"
+            }
+        ],
+        "parrafo":
         {
-            "nombre": "Home",
-            "link": "#home"
-        },
-        {
-            "nombre": "About",
-            "link": "#about"
-        },
-        {
-            "nombre": "Education",
-            "link": "#education"
-        },
-        {
-            "nombre": "Skills",
-            "link": "#skills"
-        },
-        {
-            "nombre": "Contact",
-            "link": "#contact"
+            "titulo": [
+             "Hi, I'm",
+             "Manuela Castro"
+            ],
+            "subtitulo": "Frontend Developer",
+            "descripcion": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim excepturi dolores harum fugiat velit accusantium necessitatibus eligendi commodi aut iste quod placeat, rerum sint facilis sunt officia.",
+            "botones": 
+            [
+                {
+                    "nombre": "Hire Me",
+                    "link": "#" 
+                },
+                {
+                    "nombre": "Let's Talk",
+                    "link": "#" 
+                }
+            ],
+            "redes": 
+            [
+                {
+                    "nombre": "bx bxl-facebook",
+                    "link": "#" 
+                },
+                {
+                    "nombre": "bx bxl-twitter",
+                    "link": "#" 
+                },
+                {
+                    "nombre": "bx bxl-linkedin",
+                    "link": "#" 
+                }
+            ]
         }
-    ]
     }
-    
+        
 }
+
+
 
