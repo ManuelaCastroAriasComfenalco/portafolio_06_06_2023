@@ -17,7 +17,7 @@ window.onscroll = () =>
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 100;
-        let height = set.offsetHeight;
+        let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height)  
@@ -48,7 +48,7 @@ window.onscroll = () =>
     navbar.classList.remove('active');
 
     //animation footer on scroll
-    let footer = document.querySelector('footer');
+    let footer = document.querySelector('.footer');
 
-    footer.classList.toogle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }

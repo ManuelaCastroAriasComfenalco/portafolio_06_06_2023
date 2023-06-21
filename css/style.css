@@ -559,9 +559,8 @@ span
     z-index: 1;
     overflow: hidden;
 }
-
-.skills-box .skills-content::before,
 /* .contact form::before esto no está en el video 491*/
+.skills-box .skills-content::before
 {
     content: '';
     position: absolute;

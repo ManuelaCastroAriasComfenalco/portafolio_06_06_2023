@@ -1,6 +1,9 @@
+
 {
-    "nombre": "Manuela",
-    "menu":
+    "Home":
+    {
+        "nombre": "Manuela",
+        "menu":
     [
         {
             "nombre": "Home",
@@ -23,8 +26,7 @@
             "link": "#contact"
         }
     ]
+    }
+    
 }
 
-{
-    "nombre": "Manuela",
-}
