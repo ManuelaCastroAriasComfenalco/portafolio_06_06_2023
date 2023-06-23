@@ -84,11 +84,12 @@
         ["My",
          "Journey"
         ],
+        
+        "subtitulo": "Education",
+        
         "education":
         [
-            {
-                "subtitulo": "Education"
-            },
+    
             {
                 "lapso": "2017 - 2018",
                 "asociacion": "Master Degree - University",
@@ -107,6 +108,9 @@
         ],
         "experience":
         [
+            {
+                "subtitulo": "Experience"
+            },
             {
                 "lapso": "2017 - 2018",
                 "asociacion": "Web Developer - Company",

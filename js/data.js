@@ -41,17 +41,17 @@ addEventListener("DOMContentLoaded", async(e)=>
                 </div>
         `);
         document.querySelector(".education").insertAdjacentHTML("afterbegin", `
-            <h2 class="heading">${data.education.titulo[0]}<span>${data.education.titulo[1]}</span><span class="animate scroll" style="--i:1;"></span></h2>
+            <h2 class="heading">${data.Education.titulo[0]}<span>${data.Education.titulo[1]}</span><span class="animate scroll" style="--i:1;"></span></h2>
             `);
-        document.querySelector("#Education").insertAdjacentHTML("afterbegin", `  
-            <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+        document.querySelector("#The_Education").insertAdjacentHTML("afterbegin", `  
+            <h3 class="title">${data.Education.subtitulo}<span class="animate scroll" style="--i:2;"></span></h3>
 
                     <div class="education-box">
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>2017 -2018</div>
-                                <h3>Master Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio cum corporis atque temporibus autem aliquam neque praesentium repellat eos.</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.education.lapso[0]}</div>
+                                <h3>${data.Education.education.asociacion[1]}</h3>
+                                <p>${data.Education.education.descripcion[2]}</p>
                             </div>
                         </div>
 
