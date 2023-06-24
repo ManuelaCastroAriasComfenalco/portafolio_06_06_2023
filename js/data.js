@@ -49,32 +49,127 @@ addEventListener("DOMContentLoaded", async(e)=>
                     <div class="education-box">
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.education.lapso[0]}</div>
-                                <h3>${data.Education.education.asociacion[1]}</h3>
-                                <p>${data.Education.education.descripcion[2]}</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.education[0].lapso}</div>
+                                <h3>${data.Education.education[0].asociacion}</h3>
+                                <p>${data.Education.education[0].descripcion}</p>
                             </div>
                         </div>
 
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>2018 -2019</div>
-                                <h3>Master Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio cum corporis atque temporibus autem aliquam neque praesentium repellat eos.</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.education[1].lapso}</div>
+                                <h3>${data.Education.education[1].asociacion}</h3>
+                                <p>${data.Education.education[1].descripcion}</p>
                             </div>
                         </div>
                     
 
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>2019 -2020</div>
-                                <h3>Master Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio cum corporis atque temporibus autem aliquam neque praesentium repellat eos.</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.education[2].lapso}</div>
+                                <h3>${data.Education.education[2].asociacion}</h3>
+                                <p>${data.Education.education[2].descripcion}</p>
                             </div>
                         </div>
 
                         <span class="animate scroll" style="--i:3;"></span>
                     </div>
         `);
+        document.querySelector("#The_Experience").insertAdjacentHTML("afterbegin", `
+            <h3 class="title">${data.Education.Subtitulo}<span class="animate scroll" style="--i:5;"></span></h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.experience[0].lapso}</div>
+                                <h3>${data.Education.experience[0].asociacion}</h3>
+                                <p>${data.Education.experience[0].descripcion}</p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.experience[1].lapso}</div>
+                                <h3>${data.Education.experience[1].asociacion}</h3>
+                                <p>${data.Education.experience[1].descripcion}</p>
+                            </div>
+                        </div>
+                    
+                        
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i>${data.Education.experience[2].lapso}</div>
+                                <h3>${data.Education.experience[2].asociacion}</h3>
+                                <p>${data.Education.experience[2].descripcion}</p>
+                            </div>
+                        </div>
+
+                        <span class="animate scroll" style="--i:6;"></span>
+                    </div>
+        `);
+        document.querySelector(".skills").insertAdjacentHTML("afterbegin", `
+           <h2 class="heading">${data.skills.titulo[0]} <span>${data.skills.titulo[1]}</span><span class="animate scroll" style="--i:1;"></span></h2>  
+        `);
+        document.querySelector("#The_Coding").insertAdjacentHTML("afterbegin", `
+            <h3 class="title">${data.skills.subtitulo}<span class="animate scroll" style="--i:2;"></span></h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>${data.skills.lenguajes[0]} <span>${data.skills.porcentajes[0]}</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>${data.skills.lenguajes[1]} <span>${data.skills.porcentajes[1]}</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>${data.skills.porcentajes[2]} <span>${data.skills.porcentajes[2]}</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>${data.skills.porcentajes[3]} <span>${data.skills.porcentajes[3]}</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+
+                        <span class="animate scroll" style="--i:3;"></span>
+                    </div>
+        `);
+        document.querySelector("#The_Skills").insertAdjacentHTML("afterbegin", `
+            <h3 class="title">${data.skills.subtitulo_dos} <span class="animate scroll" style="--i:5;"></span></h3>
+
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>${data.skills.skills[0]} <span>${data.skills.porcentaje[0]}</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>${data.skills.skills[1]} <span>${data.skills.porcentaje[1]}</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>${data.skills.skills[2]} <span>${data.skills.porcentaje[2]}</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>${data.skills.skills[3]} <span>${data.skills.porcentaje[3]}</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+
+                <span class="animate scroll" style="--i:6;"></span>
+            </div>
+        `);
+
+    
                  
 
 })

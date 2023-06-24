@@ -106,11 +106,11 @@
                 "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio cum corporis atque temporibus autem aliquam neque praesentium repellat eos."
             }
         ],
+        "Subtitulo": "Experience",
+
         "experience":
         [
-            {
-                "subtitulo": "Experience"
-            },
+        
             {
                 "lapso": "2017 - 2018",
                 "asociacion": "Web Developer - Company",
@@ -127,7 +127,61 @@
                 "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio cum corporis atque temporibus autem aliquam neque praesentium repellat eos."
             }
         ]
+    },
+    "skills":
+    {
+        "titulo": 
+        [
+        "My", 
+        "Skills"
+        ],
+        "subtitulo": "Coding Skills",
+        "lenguajes":
+        [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+        ],
+        "porcentajes":
+        [
+            "90%",
+            "80%",
+            "65%",
+            "75%"
+        ],
+        "subtitulo_dos": "Professional Skills",
+        "skills":
+        [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+        ],
+        "porcentaje":
+        [
+            "95%",
+            "67%",
+            "85%",
+            "60%"
+        ]
+    },
+    "Contact":
+    {
+        "titulo": "Contact Me",
+        "InfoUno": "Full name",
+        "InfoDos": "Email Address",
+        "InfoTres": "Mobile Number",
+        "InfoCuatro": "Email Subject",
+        "InfoCinco": "Your Message",
+        "boton":
+        {
+            "nombre"
+        }
     }
+    
+
+   
         
 }
 
