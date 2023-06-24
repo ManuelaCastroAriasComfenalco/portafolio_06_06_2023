@@ -205,4 +205,11 @@ addEventListener("DOMContentLoaded", async(e)=>
 
                     <span class="animate scroll" style="--i:9;"></span>
         `);  
+        document.querySelector(".footer").insertAdjacentHTML("afterbegin", `
+        <div class="footer-text">
+            <p>${data.footer.Rights_Reserved}</p> 
+
+            <span class="animate scroll" style="--i:1;"></span>
+        </div>
+        `);  
 })

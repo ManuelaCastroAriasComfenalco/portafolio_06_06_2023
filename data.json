@@ -177,7 +177,11 @@
         "InfoCuatro": "Email Subject",
         "InfoCinco": "Your Message",
         "boton": "Sumbit"
-    } 
+    },
+    "footer":
+    {
+        "Rights_Reserved": "Copyright &copy; 2023 by Codehal | All Rights Reserved."
+    }
 }
 
 
