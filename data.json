@@ -166,23 +166,18 @@
             "60%"
         ]
     },
-    "Contact":
+    "contact":
     {
-        "titulo": "Contact Me",
+        "titulo": 
+        ["Contact",
+         "Me!"],
         "InfoUno": "Full name",
         "InfoDos": "Email Address",
         "InfoTres": "Mobile Number",
         "InfoCuatro": "Email Subject",
         "InfoCinco": "Your Message",
-        "boton":
-        {
-            "nombre"
-        }
-    }
-    
-
-   
-        
+        "boton": "Sumbit"
+    } 
 }
 
 

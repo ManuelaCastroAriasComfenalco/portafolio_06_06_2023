@@ -42,7 +42,7 @@ addEventListener("DOMContentLoaded", async(e)=>
         `);
         document.querySelector(".education").insertAdjacentHTML("afterbegin", `
             <h2 class="heading">${data.Education.titulo[0]}<span>${data.Education.titulo[1]}</span><span class="animate scroll" style="--i:1;"></span></h2>
-            `);
+        `);
         document.querySelector("#The_Education").insertAdjacentHTML("afterbegin", `  
             <h3 class="title">${data.Education.subtitulo}<span class="animate scroll" style="--i:2;"></span></h3>
 
@@ -168,8 +168,41 @@ addEventListener("DOMContentLoaded", async(e)=>
                 <span class="animate scroll" style="--i:6;"></span>
             </div>
         `);
+        document.querySelector(".contact").insertAdjacentHTML("afterbegin", `
+           <h2 class="heading">${data.contact.titulo[0]} <span>${data.contact.titulo[1]}</span><span class="animate scroll" style="--i:1;"></span></h2>
+        `);
+        document.querySelector("#datos1").insertAdjacentHTML("afterbegin", `
+            <div class="input-field">
+                <input type="text" placeholder="${data.contact.InfoUno}" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="${data.contact.InfoDos}" required>
+                <span class="focus"></span>
+            </div>
+            <span class="animate scroll" style="--i:3;"></span>
+        `);
+        document.querySelector("#datos2").insertAdjacentHTML("afterbegin", `
+            <div class="input-field">
+                <input type="number" placeholder="${data.contact.InfoTres}" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="${data.contact.InfoCuatro}" required>
+                <span class="focus"></span>
+            </div>
 
-    
-                 
+            <span class="animate scroll" style="--i:5;"></span>
+        `);
+        document.querySelector("#datos3").insertAdjacentHTML("afterbegin", `
+            <textarea name="" id="" cols="30" rows="10" placeholder="${data.contact.InfoCinco}" required></textarea>
+                    <span class="focus"></span>
 
+                    <span class="animate scroll" style="--i:7;"></span>
+        `);   
+        document.querySelector("#datos4").insertAdjacentHTML("afterbegin", `
+            <button type="submit" class="btn">${data.contact.boton}</button>
+
+                    <span class="animate scroll" style="--i:9;"></span>
+        `);  
 })
