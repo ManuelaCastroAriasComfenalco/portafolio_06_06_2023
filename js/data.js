@@ -9,6 +9,7 @@ addEventListener("DOMContentLoaded", async(e)=>
         <a href="${data.home.menu[2].link}">${data.home.menu[2].nombre}</a>
         <a href="${data.home.menu[3].link}">${data.home.menu[3].nombre}</a>
         <a href="${data.home.menu[4].link}">${data.home.menu[4].nombre}</a>
+        <a href="${data.home.menu[5].link}">${data.home.menu[5].nombre}</a>
         `);
         document.querySelector(".home-content").insertAdjacentHTML("afterbegin", `
             <h1>${data.home.parrafo.titulo[0]} <span>${data.home.parrafo.titulo[1]}</span><span class="animate" style="--i:2;"></span></h1>
@@ -173,22 +174,22 @@ addEventListener("DOMContentLoaded", async(e)=>
         `);
         document.querySelector("#datos1").insertAdjacentHTML("afterbegin", `
             <div class="input-field">
-                <input type="text" placeholder="${data.contact.InfoUno}" required>
+                <input name="nombre" type="text" placeholder="${data.contact.InfoUno}" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="${data.contact.InfoDos}" required>
+                <input name="correo" type="text" placeholder="${data.contact.InfoDos}" required>
                 <span class="focus"></span>
             </div>
             <span class="animate scroll" style="--i:3;"></span>
         `);
         document.querySelector("#datos2").insertAdjacentHTML("afterbegin", `
             <div class="input-field">
-                <input type="number" placeholder="${data.contact.InfoTres}" required>
+                <input name"telefono" type="number" placeholder="${data.contact.InfoTres}" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="${data.contact.InfoCuatro}" required>
+                <input name"asunto" type="text" placeholder="${data.contact.InfoCuatro}" required>
                 <span class="focus"></span>
             </div>
 
@@ -212,4 +213,28 @@ addEventListener("DOMContentLoaded", async(e)=>
             <span class="animate scroll" style="--i:1;"></span>
         </div>
         `);  
+
+         // https://649b7688bf7c145d023a50ee.mockapi.io/contactame
+
+    let formulario = document.querySelector("#myForm");
+
+    formulario.addEventListener("submit", async(e)=>{
+        e.preventDefault();
+        let data = Object.fromEntries(new FormData(e.target));
+        let confgi = {
+            method:"POST",
+            headers: {"Content-Type": "application/json"},
+            body:JSON.stringify(data)
+        };
+        let conexion = await (await fetch("https://649b7688bf7c145d023a50ee.mockapi.io/contactame", confgi)).json();
+        formulario.reset();
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: `Usuario ${conexion.nombre}, tu solicituid fue enviada exitosamente. Tique # ${conexion.id}`,
+            showConfirmButton: false,
+            timer: 5000
+          })
+        
+    });
 })
