@@ -196,7 +196,7 @@ addEventListener("DOMContentLoaded", async(e)=>
             <span class="animate scroll" style="--i:5;"></span>
         `);
         document.querySelector("#datos3").insertAdjacentHTML("afterbegin", `
-            <textarea name="" id="" cols="30" rows="10" placeholder="${data.contact.InfoCinco}" required></textarea>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="${data.contact.InfoCinco}" required></textarea>
                     <span class="focus"></span>
 
                     <span class="animate scroll" style="--i:7;"></span>
