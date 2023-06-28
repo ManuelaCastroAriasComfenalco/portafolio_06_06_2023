@@ -185,7 +185,7 @@ addEventListener("DOMContentLoaded", async(e)=>
         `);
         document.querySelector("#datos2").insertAdjacentHTML("afterbegin", `
             <div class="input-field">
-                <input name"telefono" type="number" placeholder="${data.contact.InfoTres}" required>
+                <input name"telefono" type="text" placeholder="${data.contact.InfoTres}" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
